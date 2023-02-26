@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import style from '../src/styles/menu.module.css'
-import { AudioPlayer } from 'components/AudioPlayer'
+import style from '../src/styles/menu.module.css';
 
 export default function menu() {
     return (
@@ -11,7 +10,6 @@ export default function menu() {
                 <Link className={style.link} href='/faq'> Faq</Link>
                 <Link className={style.link} href='/store'> Store</Link>
             </div>
-            <AudioPlayer />
             <div className={style.link}>
                 <a href='#'> Cart(0)</a>
             </div>
