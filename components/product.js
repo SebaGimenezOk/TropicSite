@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import style from '../src/styles/product.module.css'
+
 
 export default function Product({ item, showAs }) {
     if (showAs == "Page") {
@@ -10,10 +12,9 @@ export default function Product({ item, showAs }) {
         return <div>List Item</div>;
     }
     return (
-        <div>
-
+        <div className={style.item}> 
             <div>
-                <Link href={`/store/url-a-mi-componente`}>
+                <Link href={`/store/${item.id}`}>
                     
                         <Image
                             src={item.image}
@@ -24,17 +25,13 @@ export default function Product({ item, showAs }) {
                     
                 </Link>
             </div>
-
             <div>
                 <h3>
                     <Link href={`/store/url-a-mi-componente`}>
-                    
                             {item.title}
-                        
                     </Link>
                 </h3>
             </div>
-
         <div>
             ${item.price}
         </div>

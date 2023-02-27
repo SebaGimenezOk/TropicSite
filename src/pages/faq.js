@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function FAQ() {
     return (
-        <Layout>
+        <Layout  title='FAQ'>
             <h1> FAQ</h1>
         </Layout>
     )
