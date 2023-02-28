@@ -1,15 +1,18 @@
 import Product from 'components/product'
 import Layout from 'components/layout'
 import React from 'react'
-import { getItemData, getPathsFromId } from 'lib/utils'
+import { getItemData, getPathsFromIds } from 'lib/utils'
 
 export default function ProductPage({ productInfo }) {
-    return <Layout>
-        <Product item={productInfo}showAs="Page" />
-    </Layout>
+
+
+    return (<Layout>
+        <Product item={productInfo} showAs="Page" />
+    </Layout>);
+
 }
 export async function getStaticPaths() {
-    const paths = await getPathsFromId();
+    const paths = await getPathsFromIds();
 
     return {
         paths: paths,

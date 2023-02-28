@@ -1,14 +1,15 @@
 .items {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 
 .item {
     background-color: white;
+    border-radius: 20px;
     padding: 20px;
     font-size: 20px;
-    width: 400px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     text-align: center;
