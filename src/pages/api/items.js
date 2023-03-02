@@ -4,7 +4,7 @@ export default function handler(req, res) {
     res.status(200).json([{
 
         id: 1,
-        title: "Tropibox",
+        title: "holanda",
         price: 1700,
         image: 'http://localhost:3000/img/holanda.png',
         stock: 20,
