@@ -1,7 +1,35 @@
 .main {
-display: flex;
+  display: flex;
   min-height: 100vh;
+
 }
 
+.hero {
+
+  width: 1366px;
+  height: 768px;
+  background-image: url(http://localhost:3000/img/SoloPalmeras1360.png);
+  background-repeat: no-repeat;
 
 
+}
+
+.logo {
+  position: relative;
+
+}
+
+.bloquetitular {
+  display: flex;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  height: 50vh;
+  background-color: rgb(11, 20, 29);
+  color: antiquewhite;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  align-content: center;
+  gap: 45px;
+}

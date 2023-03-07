@@ -1,0 +1,28 @@
+.reproTropi {
+    display: flex;
+    
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    background-color: rgba(11, 20, 29, 0.795);
+    background: rgba(28, 27, 32, 0.692);
+    color: antiquewhite;
+    border-radius: 23px;
+    align-items: center;
+
+
+}
+
+.CardImg {
+    max-width: 160px;
+
+}
+
+.Cardex {
+    border: none;
+    background: none;
+}
+
+.Hero1 .Hero2 {
+    height: 50%;
+    width: 50%;
+}

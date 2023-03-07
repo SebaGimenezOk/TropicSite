@@ -4,14 +4,13 @@
     align-items: center;
     align-content: center;
     height: 56px;
-
 }
 
 .iconVol {
-    color: #ff1100;
+    color: orange;
     margin: 5px;
 
-}
+} 
 
 
 .playPause {
@@ -20,7 +19,7 @@
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    color: #ff1100;
+    color: orange;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -32,18 +31,18 @@
 .play {
     position: relative;
     font-size: 16px;
-    color: #ff1100;
+    color: orange;
 }
 
 .progressBar {
 
     display: flex;
-
+     background-color: aquamarine;
     position: relative;
     width: 80px;
     height: 3px;
 
-    outline: none;
+
 }
 
 .progressBar::-webkit-slider-runnable-track {
@@ -79,6 +78,7 @@
     left: 0;
     z-index: 2;
     cursor: pointer;
+     
 
 }
 

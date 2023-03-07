@@ -7,12 +7,14 @@ export default function menu() {
         <nav className={style.menu}>
             <div>
                 <Link className={style.link} href='/'> Home</Link>
-                <Link className={style.link} href='/faq'> Faq</Link>
+                <Link className={style.link} href='/top'> Top Five</Link>
                 <Link className={style.link} href='/store'> Store</Link>
+                <Link className={style.link} href='/contacto'> Contacto</Link>
+                <Link className={style.link} href='/socialmedia'> SocialMedia</Link>
             </div>
-            <div className={style.link}>
+            {/* <div className={style.link}>
                 <a href='#'> Cart(0)</a>
-            </div>
+            </div> */}
         </nav>
-    )
+    ) 
 }

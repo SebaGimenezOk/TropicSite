@@ -37,7 +37,7 @@ const AudioPlayer2 = () => {
 
     return (
         <div className={styles.audioPlayer}>
-            <audio ref={audioPlayer} src='https://radiostreamingserver.com.ar/proxy/tropibox/stream?type=.mp3' preload='metadata'></audio>
+            <audio ref={audioPlayer} src='https://radiostreamingserver.com.ar/proxy/rdn/stream?type=.mp3' preload='metadata'></audio>
 
             <button onClick={togglePlayPause} className={styles.playPause}>
                 {isPlaying ? <FaPause /> : <FaPlay className={styles.play} />}

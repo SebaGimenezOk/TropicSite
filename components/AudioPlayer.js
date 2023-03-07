@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import styles from '../src/styles/AudioPlayer.module.css';
 import { FaPlay } from 'react-icons/fa';
 import { FaPause } from 'react-icons/fa';
-import { FaVolumeUp} from 'react-icons/fa';
+import { FaVolumeUp } from 'react-icons/fa';
 
 
 
@@ -37,17 +37,19 @@ const AudioPlayer = () => {
 
     return (
         <div className={styles.audioPlayer}>
-            <audio ref={audioPlayer} src='https://radiostreamingserver.com.ar/proxy/rdn/stream?type=.mp3' preload='metadata'></audio>
+            <audio ref={audioPlayer} src='https://radiostreamingserver.com.ar/proxy/tropibox/stream?type=.mp3' preload='metadata'></audio>
 
             <button onClick={togglePlayPause} className={styles.playPause}>
                 {isPlaying ? <FaPause /> : <FaPlay className={styles.play} />}
             </button>
-            <FaVolumeUp className={styles.iconVol}/>
+            <FaVolumeUp className={styles.iconVol} />
             <div>
-                <input  type="range" min="0" max="100" onChange={handleVolumeChange} className={styles.progressBar} />
+                <input type="range" min="0" max="100" onChange={handleVolumeChange} className={styles.progressBar} />
             </div>
         </div>
-    )  
+    )
 }
 
 export { AudioPlayer }
+
+
