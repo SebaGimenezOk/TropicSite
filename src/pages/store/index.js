@@ -8,11 +8,16 @@ import style from '../../styles/product.module.css'
 export default function index({ items }) {
     return (
         <Layout title='Store'>
-            <h1 className={style.tituloPrincipal}>TropicStore </h1>
-            <div className={styleItems.items}>
-                {items && items.map((item) => (
-                    <Product key={item.id} item={item} showAs='Default' />
-                ))}
+            <div className={style.bloqueTienda}>
+                <div className={style.fondoBloqueTienda}>
+                    <h1 className={style.tituloPrincipal}>TropicStore</h1>
+                    <h2 className={style.tituloSecundario}>Todos los clasicos tiene su remera!  busca la tuya</h2>
+                </div>
+                <div className={styleItems.items}>
+                    {items && items.map((item) => (
+                        <Product key={item.id} item={item} showAs='Default' />
+                    ))}
+                </div>
             </div>
         </Layout>
     )

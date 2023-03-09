@@ -1,13 +1,13 @@
 .menu {
-    padding: 0 20px;
+    width: 100%;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 10px(rgba(0, 0, 0, 0.8));
+    box-shadow: 0 0 10px(rgba(0, 0, 0, 0.918));
     justify-content: space-around;
-    background-color: rgba(11, 20, 29, 0.87);
     background: rgba(28, 27, 32, 0.822);
     color: antiquewhite;
     text-transform: uppercase;
+    position: sticky;
 }
 
 .menu> div {
